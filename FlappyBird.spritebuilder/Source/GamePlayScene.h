@@ -18,8 +18,8 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
 @interface GamePlayScene : CCNode <CCPhysicsCollisionDelegate>
 {
     // define variables here;
-    Character* soliflappy;
-    CCPhysicsNode* nodoFisico;
+    Character* character;
+    CCPhysicsNode* physicsNode;
 }
 
 -(void) initialize;
