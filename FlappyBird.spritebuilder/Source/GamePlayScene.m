@@ -7,9 +7,10 @@
 - (void)initialize
 {
     // your code here
-    character = (Character*)[CCBReader load:@"soliflappy"];
+    character = (Character*)[CCBReader load:@"character"];
     [physicsNode addChild:character];
     [self addObstacle];
+    timeSinceObstacle = 0.0f;
 }
 
 -(void)update:(CCTime)delta
@@ -21,6 +22,7 @@
 -(void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event{
     //código que se llamará cada vez que se toque la pantalla
     [character flap];
+    
     
     
 }
