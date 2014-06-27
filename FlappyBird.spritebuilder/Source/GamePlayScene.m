@@ -9,6 +9,7 @@
     // your code here
     soliflappy = (Character*)[CCBReader load:@"soliflappy"];
     [nodoFisico addChild:soliflappy];
+    [self addObstacle];
 }
 
 -(void)update:(CCTime)delta
