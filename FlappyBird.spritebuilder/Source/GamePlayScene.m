@@ -18,9 +18,10 @@
 }
 
 // put new methods here
--(void)meTocaron:(UITouch *)touch withEvent:(UIEvent *)event{
+-(void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event{
     //código que se llamará cada vez que se toque la pantalla
     [character flap];
+    
     
 }
 
